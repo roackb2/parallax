@@ -1,1 +1,1 @@
-import './styles/parallax.scss'
+import '@/assets/styles/parallax.scss'

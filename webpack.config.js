@@ -12,7 +12,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
         test: /\.s[ac]ss$/i,
@@ -24,8 +24,19 @@ module.exports = {
           // Compiles Sass to CSS
           "sass-loader",
         ],
-      },
+      }
     ],
+  },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src')
+    },
+    extensions: [
+      '.sass',
+      '.scss',
+      '.css',
+      '.js'
+    ]
   },
   plugins: [
     new MiniCssExtractPlugin({
