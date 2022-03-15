@@ -1,0 +1,78 @@
+@import './parallax.scss';
+@import 'atropos/scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-txt {
+  font-size: 48px;
+  color: white;
+}
+
+.large-txt {
+  font-size: 64px;
+}
+
+.bg1 {
+  background-image: url('../images/bg_1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg2 {
+  background-image: url('../images/bg_2.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg3 {
+  background-image: url('../images/bg_3.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.item1 {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.item2 {
+  -webkit-transform: translateZ(-1px);
+  transform: translateZ(-1px);
+}
+
+.title {
+  text-align: center;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
